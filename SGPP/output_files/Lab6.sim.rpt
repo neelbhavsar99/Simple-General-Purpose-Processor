@@ -1,0 +1,519 @@
+Simulator report for Lab6
+Tue Nov 27 17:04:41 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 240 nodes    ;
+; Simulation Coverage         ;      53.14 % ;
+; Total Number of Transitions ; 4356         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                             ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                           ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                              ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                               ;               ;
+; Vector input source                                                                        ; /home/student1/npbhavsa/lab6new1/ALU2Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                ; On            ;
+; Check outputs                                                                              ; Off                                               ; Off           ;
+; Report simulation coverage                                                                 ; On                                                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                               ; Off           ;
+; Detect glitches                                                                            ; Off                                               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                               ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                              ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      53.14 % ;
+; Total nodes checked                                 ; 240          ;
+; Total output ports checked                          ; 271          ;
+; Total output ports with complete 1/0-value coverage ; 144          ;
+; Total output ports with no 1/0-value coverage       ; 85           ;
+; Total output ports with no 1-value coverage         ; 98           ;
+; Total output ports with no 0-value coverage         ; 114          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |ALU2GPU|ALU2final:inst67|Result[2]        ; |ALU2GPU|ALU2final:inst67|Result[2]        ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result[6]        ; |ALU2GPU|ALU2final:inst67|Result[6]        ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result[4]        ; |ALU2GPU|ALU2final:inst67|Result[4]        ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Add4~6           ; |ALU2GPU|ALU2final:inst67|Add4~6           ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~12          ; |ALU2GPU|ALU2final:inst67|Add2~12          ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~10          ; |ALU2GPU|ALU2final:inst67|Add1~10          ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~12          ; |ALU2GPU|ALU2final:inst67|Add1~12          ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~14          ; |ALU2GPU|ALU2final:inst67|Add1~14          ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add4~14          ; |ALU2GPU|ALU2final:inst67|Add4~14          ; combout          ;
+; |ALU2GPU|FSM:yth|yfsm.s1                   ; |ALU2GPU|FSM:yth|yfsm.s1                   ; regout           ;
+; |ALU2GPU|FSM:yth|yfsm.s3                   ; |ALU2GPU|FSM:yth|yfsm.s3                   ; regout           ;
+; |ALU2GPU|FSM:yth|yfsm.s5                   ; |ALU2GPU|FSM:yth|yfsm.s5                   ; regout           ;
+; |ALU2GPU|FSM:yth|yfsm.s7                   ; |ALU2GPU|FSM:yth|yfsm.s7                   ; regout           ;
+; |ALU2GPU|FSM:yth|WideOr12~0                ; |ALU2GPU|FSM:yth|WideOr12~0                ; combout          ;
+; |ALU2GPU|FSM:yth|yfsm.s6                   ; |ALU2GPU|FSM:yth|yfsm.s6                   ; regout           ;
+; |ALU2GPU|FSM:yth|yfsm.s2                   ; |ALU2GPU|FSM:yth|yfsm.s2                   ; regout           ;
+; |ALU2GPU|FSM:yth|WideOr11~0                ; |ALU2GPU|FSM:yth|WideOr11~0                ; combout          ;
+; |ALU2GPU|FSM:yth|yfsm.s4                   ; |ALU2GPU|FSM:yth|yfsm.s4                   ; regout           ;
+; |ALU2GPU|FSM:yth|WideOr10                  ; |ALU2GPU|FSM:yth|WideOr10                  ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux0~4           ; |ALU2GPU|decodenew:inst54|Mux0~4           ; combout          ;
+; |ALU2GPU|FSM:yth|yfsm.s8                   ; |ALU2GPU|FSM:yth|yfsm.s8                   ; regout           ;
+; |ALU2GPU|decodenew:inst54|Mux1~0           ; |ALU2GPU|decodenew:inst54|Mux1~0           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux2~0           ; |ALU2GPU|decodenew:inst54|Mux2~0           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux2~1           ; |ALU2GPU|decodenew:inst54|Mux2~1           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux3~0           ; |ALU2GPU|decodenew:inst54|Mux3~0           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux4~0           ; |ALU2GPU|decodenew:inst54|Mux4~0           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux5~0           ; |ALU2GPU|decodenew:inst54|Mux5~0           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux5~1           ; |ALU2GPU|decodenew:inst54|Mux5~1           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux6~4           ; |ALU2GPU|decodenew:inst54|Mux6~4           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux7~0           ; |ALU2GPU|decodenew:inst54|Mux7~0           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux8~0           ; |ALU2GPU|decodenew:inst54|Mux8~0           ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[3]        ; |ALU2GPU|ALU2final:inst67|Result[3]        ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result[1]        ; |ALU2GPU|ALU2final:inst67|Result[1]        ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result[0]        ; |ALU2GPU|ALU2final:inst67|Result[0]        ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result[7]        ; |ALU2GPU|ALU2final:inst67|Result[7]        ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result[5]        ; |ALU2GPU|ALU2final:inst67|Result[5]        ; regout           ;
+; |ALU2GPU|ssegnew:inst16|Mux0~0             ; |ALU2GPU|ssegnew:inst16|Mux0~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst16|Mux1~0             ; |ALU2GPU|ssegnew:inst16|Mux1~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst16|Mux2~0             ; |ALU2GPU|ssegnew:inst16|Mux2~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst16|Mux3~0             ; |ALU2GPU|ssegnew:inst16|Mux3~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst16|Mux4~0             ; |ALU2GPU|ssegnew:inst16|Mux4~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst16|Mux5~0             ; |ALU2GPU|ssegnew:inst16|Mux5~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst16|Mux6~0             ; |ALU2GPU|ssegnew:inst16|Mux6~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst15|Mux0~0             ; |ALU2GPU|ssegnew:inst15|Mux0~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst15|Mux1~0             ; |ALU2GPU|ssegnew:inst15|Mux1~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst15|Mux2~0             ; |ALU2GPU|ssegnew:inst15|Mux2~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst15|Mux3~0             ; |ALU2GPU|ssegnew:inst15|Mux3~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst15|Mux4~0             ; |ALU2GPU|ssegnew:inst15|Mux4~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst15|Mux5~0             ; |ALU2GPU|ssegnew:inst15|Mux5~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst15|Mux6~0             ; |ALU2GPU|ssegnew:inst15|Mux6~0             ; combout          ;
+; |ALU2GPU|FSM:yth|yfsm.s0                   ; |ALU2GPU|FSM:yth|yfsm.s0                   ; regout           ;
+; |ALU2GPU|FSM:yth|student_id[2]~0           ; |ALU2GPU|FSM:yth|student_id[2]~0           ; combout          ;
+; |ALU2GPU|ssegnew:inst17|Mux2~0             ; |ALU2GPU|ssegnew:inst17|Mux2~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst17|Mux3~0             ; |ALU2GPU|ssegnew:inst17|Mux3~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst17|Mux4~0             ; |ALU2GPU|ssegnew:inst17|Mux4~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst17|Mux5~0             ; |ALU2GPU|ssegnew:inst17|Mux5~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst17|Mux6~0             ; |ALU2GPU|ssegnew:inst17|Mux6~0             ; combout          ;
+; |ALU2GPU|ssegnew:inst17|Mux6~1             ; |ALU2GPU|ssegnew:inst17|Mux6~1             ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[3]~0      ; |ALU2GPU|ALU2final:inst67|Result[3]~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[3]~2      ; |ALU2GPU|ALU2final:inst67|Result[3]~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[3]~3      ; |ALU2GPU|ALU2final:inst67|Result[3]~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector4~0      ; |ALU2GPU|ALU2final:inst67|Selector4~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector4~1      ; |ALU2GPU|ALU2final:inst67|Selector4~1      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector4~2      ; |ALU2GPU|ALU2final:inst67|Selector4~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector4~3      ; |ALU2GPU|ALU2final:inst67|Selector4~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[3]~4      ; |ALU2GPU|ALU2final:inst67|Result[3]~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector5~0      ; |ALU2GPU|ALU2final:inst67|Selector5~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector5~1      ; |ALU2GPU|ALU2final:inst67|Selector5~1      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[2]~6      ; |ALU2GPU|ALU2final:inst67|Result[2]~6      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[2]~7      ; |ALU2GPU|ALU2final:inst67|Result[2]~7      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector5~2      ; |ALU2GPU|ALU2final:inst67|Selector5~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector5~3      ; |ALU2GPU|ALU2final:inst67|Selector5~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector6~0      ; |ALU2GPU|ALU2final:inst67|Selector6~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector6~2      ; |ALU2GPU|ALU2final:inst67|Selector6~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector6~3      ; |ALU2GPU|ALU2final:inst67|Selector6~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector6~4      ; |ALU2GPU|ALU2final:inst67|Selector6~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector6~5      ; |ALU2GPU|ALU2final:inst67|Selector6~5      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector7~1      ; |ALU2GPU|ALU2final:inst67|Selector7~1      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector7~2      ; |ALU2GPU|ALU2final:inst67|Selector7~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector7~3      ; |ALU2GPU|ALU2final:inst67|Selector7~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector7~4      ; |ALU2GPU|ALU2final:inst67|Selector7~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector0~0      ; |ALU2GPU|ALU2final:inst67|Selector0~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector0~1      ; |ALU2GPU|ALU2final:inst67|Selector0~1      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector0~2      ; |ALU2GPU|ALU2final:inst67|Selector0~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector0~3      ; |ALU2GPU|ALU2final:inst67|Selector0~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector1~0      ; |ALU2GPU|ALU2final:inst67|Selector1~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector1~1      ; |ALU2GPU|ALU2final:inst67|Selector1~1      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector1~2      ; |ALU2GPU|ALU2final:inst67|Selector1~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector1~3      ; |ALU2GPU|ALU2final:inst67|Selector1~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector2~0      ; |ALU2GPU|ALU2final:inst67|Selector2~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector2~1      ; |ALU2GPU|ALU2final:inst67|Selector2~1      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector2~2      ; |ALU2GPU|ALU2final:inst67|Selector2~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector2~3      ; |ALU2GPU|ALU2final:inst67|Selector2~3      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector3~0      ; |ALU2GPU|ALU2final:inst67|Selector3~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector3~1      ; |ALU2GPU|ALU2final:inst67|Selector3~1      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector3~2      ; |ALU2GPU|ALU2final:inst67|Selector3~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector3~3      ; |ALU2GPU|ALU2final:inst67|Selector3~3      ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux0~5           ; |ALU2GPU|decodenew:inst54|Mux0~5           ; combout          ;
+; |ALU2GPU|decodenew:inst54|Mux6~5           ; |ALU2GPU|decodenew:inst54|Mux6~5           ; combout          ;
+; |ALU2GPU|FSM:yth|yfsm.s1~0                 ; |ALU2GPU|FSM:yth|yfsm.s1~0                 ; combout          ;
+; |ALU2GPU|FSM:yth|yfsm.s0~0                 ; |ALU2GPU|FSM:yth|yfsm.s0~0                 ; combout          ;
+; |ALU2GPU|OP[15]                            ; |ALU2GPU|OP[15]                            ; padio            ;
+; |ALU2GPU|OP[14]                            ; |ALU2GPU|OP[14]                            ; padio            ;
+; |ALU2GPU|OP[13]                            ; |ALU2GPU|OP[13]                            ; padio            ;
+; |ALU2GPU|OP[12]                            ; |ALU2GPU|OP[12]                            ; padio            ;
+; |ALU2GPU|OP[11]                            ; |ALU2GPU|OP[11]                            ; padio            ;
+; |ALU2GPU|OP[10]                            ; |ALU2GPU|OP[10]                            ; padio            ;
+; |ALU2GPU|OP[9]                             ; |ALU2GPU|OP[9]                             ; padio            ;
+; |ALU2GPU|OP[8]                             ; |ALU2GPU|OP[8]                             ; padio            ;
+; |ALU2GPU|OP[7]                             ; |ALU2GPU|OP[7]                             ; padio            ;
+; |ALU2GPU|R1[3]                             ; |ALU2GPU|R1[3]                             ; padio            ;
+; |ALU2GPU|R1[2]                             ; |ALU2GPU|R1[2]                             ; padio            ;
+; |ALU2GPU|R1[1]                             ; |ALU2GPU|R1[1]                             ; padio            ;
+; |ALU2GPU|R1[0]                             ; |ALU2GPU|R1[0]                             ; padio            ;
+; |ALU2GPU|R2[3]                             ; |ALU2GPU|R2[3]                             ; padio            ;
+; |ALU2GPU|R2[2]                             ; |ALU2GPU|R2[2]                             ; padio            ;
+; |ALU2GPU|R2[1]                             ; |ALU2GPU|R2[1]                             ; padio            ;
+; |ALU2GPU|R2[0]                             ; |ALU2GPU|R2[0]                             ; padio            ;
+; |ALU2GPU|R_first_four[0]                   ; |ALU2GPU|R_first_four[0]                   ; padio            ;
+; |ALU2GPU|R_first_four[1]                   ; |ALU2GPU|R_first_four[1]                   ; padio            ;
+; |ALU2GPU|R_first_four[2]                   ; |ALU2GPU|R_first_four[2]                   ; padio            ;
+; |ALU2GPU|R_first_four[3]                   ; |ALU2GPU|R_first_four[3]                   ; padio            ;
+; |ALU2GPU|R_first_four[4]                   ; |ALU2GPU|R_first_four[4]                   ; padio            ;
+; |ALU2GPU|R_first_four[5]                   ; |ALU2GPU|R_first_four[5]                   ; padio            ;
+; |ALU2GPU|R_first_four[6]                   ; |ALU2GPU|R_first_four[6]                   ; padio            ;
+; |ALU2GPU|R_last_four[0]                    ; |ALU2GPU|R_last_four[0]                    ; padio            ;
+; |ALU2GPU|R_last_four[1]                    ; |ALU2GPU|R_last_four[1]                    ; padio            ;
+; |ALU2GPU|R_last_four[2]                    ; |ALU2GPU|R_last_four[2]                    ; padio            ;
+; |ALU2GPU|R_last_four[3]                    ; |ALU2GPU|R_last_four[3]                    ; padio            ;
+; |ALU2GPU|R_last_four[4]                    ; |ALU2GPU|R_last_four[4]                    ; padio            ;
+; |ALU2GPU|R_last_four[5]                    ; |ALU2GPU|R_last_four[5]                    ; padio            ;
+; |ALU2GPU|R_last_four[6]                    ; |ALU2GPU|R_last_four[6]                    ; padio            ;
+; |ALU2GPU|student_ID[1]                     ; |ALU2GPU|student_ID[1]                     ; padio            ;
+; |ALU2GPU|student_ID[2]                     ; |ALU2GPU|student_ID[2]                     ; padio            ;
+; |ALU2GPU|student_ID[3]                     ; |ALU2GPU|student_ID[3]                     ; padio            ;
+; |ALU2GPU|student_ID[4]                     ; |ALU2GPU|student_ID[4]                     ; padio            ;
+; |ALU2GPU|student_ID[5]                     ; |ALU2GPU|student_ID[5]                     ; padio            ;
+; |ALU2GPU|student_ID[6]                     ; |ALU2GPU|student_ID[6]                     ; padio            ;
+; |ALU2GPU|Clock                             ; |ALU2GPU|Clock~corein                      ; combout          ;
+; |ALU2GPU|Clock~clk_delay_ctrl              ; |ALU2GPU|Clock~clk_delay_ctrl              ; clkout           ;
+; |ALU2GPU|Clock~clkctrl                     ; |ALU2GPU|Clock~clkctrl                     ; outclk           ;
+; |ALU2GPU|ALU2final:inst67|Result[2]~feeder ; |ALU2GPU|ALU2final:inst67|Result[2]~feeder ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[6]~feeder ; |ALU2GPU|ALU2final:inst67|Result[6]~feeder ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result[4]~feeder ; |ALU2GPU|ALU2final:inst67|Result[4]~feeder ; combout          ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |ALU2GPU|ALU2final:inst67|Add2~1      ; |ALU2GPU|ALU2final:inst67|Add2~1      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~2      ; |ALU2GPU|ALU2final:inst67|Add2~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~2      ; |ALU2GPU|ALU2final:inst67|Add2~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~4      ; |ALU2GPU|ALU2final:inst67|Add2~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~4      ; |ALU2GPU|ALU2final:inst67|Add2~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~6      ; |ALU2GPU|ALU2final:inst67|Add2~6      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~6      ; |ALU2GPU|ALU2final:inst67|Add2~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~0      ; |ALU2GPU|ALU2final:inst67|Add0~1      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~2      ; |ALU2GPU|ALU2final:inst67|Add0~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~2      ; |ALU2GPU|ALU2final:inst67|Add0~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~4      ; |ALU2GPU|ALU2final:inst67|Add0~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~4      ; |ALU2GPU|ALU2final:inst67|Add0~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~6      ; |ALU2GPU|ALU2final:inst67|Add0~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add1~0      ; |ALU2GPU|ALU2final:inst67|Add1~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~2      ; |ALU2GPU|ALU2final:inst67|Add1~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~2      ; |ALU2GPU|ALU2final:inst67|Add1~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add1~4      ; |ALU2GPU|ALU2final:inst67|Add1~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add1~6      ; |ALU2GPU|ALU2final:inst67|Add1~6      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~6      ; |ALU2GPU|ALU2final:inst67|Add1~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~1      ; |ALU2GPU|ALU2final:inst67|Add4~1      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~4      ; |ALU2GPU|ALU2final:inst67|Add4~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~0      ; |ALU2GPU|ALU2final:inst67|Add3~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~2      ; |ALU2GPU|ALU2final:inst67|Add3~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~8      ; |ALU2GPU|ALU2final:inst67|Add2~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~8      ; |ALU2GPU|ALU2final:inst67|Add2~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~12     ; |ALU2GPU|ALU2final:inst67|Add2~13     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~8      ; |ALU2GPU|ALU2final:inst67|Add0~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~8      ; |ALU2GPU|ALU2final:inst67|Add0~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~10     ; |ALU2GPU|ALU2final:inst67|Add0~11     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~12     ; |ALU2GPU|ALU2final:inst67|Add0~13     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add1~8      ; |ALU2GPU|ALU2final:inst67|Add1~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~10     ; |ALU2GPU|ALU2final:inst67|Add1~11     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~8      ; |ALU2GPU|ALU2final:inst67|Add4~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~12     ; |ALU2GPU|ALU2final:inst67|Add4~13     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~4      ; |ALU2GPU|ALU2final:inst67|Add3~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~4      ; |ALU2GPU|ALU2final:inst67|Add3~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~6      ; |ALU2GPU|ALU2final:inst67|Add3~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~8      ; |ALU2GPU|ALU2final:inst67|Add3~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~8      ; |ALU2GPU|ALU2final:inst67|Add3~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~10     ; |ALU2GPU|ALU2final:inst67|Add3~10     ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[3]            ; |ALU2GPU|latch2:inst3|Q[3]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~1    ; |ALU2GPU|ALU2final:inst67|Result~1    ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[2]            ; |ALU2GPU|latch2:inst3|Q[2]            ; regout           ;
+; |ALU2GPU|latch2:inst3|Q[1]            ; |ALU2GPU|latch2:inst3|Q[1]            ; regout           ;
+; |ALU2GPU|latch2:inst3|Q[0]            ; |ALU2GPU|latch2:inst3|Q[0]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[2]            ; |ALU2GPU|latch1:inst2|Q[2]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[1]            ; |ALU2GPU|latch1:inst2|Q[1]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~5    ; |ALU2GPU|ALU2final:inst67|Result~5    ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[4]            ; |ALU2GPU|latch2:inst3|Q[4]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Selector6~1 ; |ALU2GPU|ALU2final:inst67|Selector6~1 ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[7]            ; |ALU2GPU|latch2:inst3|Q[7]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~8    ; |ALU2GPU|ALU2final:inst67|Result~8    ; combout          ;
+; |ALU2GPU|latch1:inst2|Q[6]            ; |ALU2GPU|latch1:inst2|Q[6]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[5]            ; |ALU2GPU|latch1:inst2|Q[5]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[4]            ; |ALU2GPU|latch1:inst2|Q[4]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~9    ; |ALU2GPU|ALU2final:inst67|Result~9    ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result~10   ; |ALU2GPU|ALU2final:inst67|Result~10   ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result~11   ; |ALU2GPU|ALU2final:inst67|Result~11   ; combout          ;
+; |ALU2GPU|OP[6]                        ; |ALU2GPU|OP[6]                        ; padio            ;
+; |ALU2GPU|OP[5]                        ; |ALU2GPU|OP[5]                        ; padio            ;
+; |ALU2GPU|OP[4]                        ; |ALU2GPU|OP[4]                        ; padio            ;
+; |ALU2GPU|OP[3]                        ; |ALU2GPU|OP[3]                        ; padio            ;
+; |ALU2GPU|OP[2]                        ; |ALU2GPU|OP[2]                        ; padio            ;
+; |ALU2GPU|OP[1]                        ; |ALU2GPU|OP[1]                        ; padio            ;
+; |ALU2GPU|OP[0]                        ; |ALU2GPU|OP[0]                        ; padio            ;
+; |ALU2GPU|Sign[0]                      ; |ALU2GPU|Sign[0]                      ; padio            ;
+; |ALU2GPU|Sign[1]                      ; |ALU2GPU|Sign[1]                      ; padio            ;
+; |ALU2GPU|Sign[2]                      ; |ALU2GPU|Sign[2]                      ; padio            ;
+; |ALU2GPU|Sign[3]                      ; |ALU2GPU|Sign[3]                      ; padio            ;
+; |ALU2GPU|Sign[4]                      ; |ALU2GPU|Sign[4]                      ; padio            ;
+; |ALU2GPU|Sign[5]                      ; |ALU2GPU|Sign[5]                      ; padio            ;
+; |ALU2GPU|Sign[6]                      ; |ALU2GPU|Sign[6]                      ; padio            ;
+; |ALU2GPU|student_ID[0]                ; |ALU2GPU|student_ID[0]                ; padio            ;
+; |ALU2GPU|Enable_Decoder               ; |ALU2GPU|Enable_Decoder~corein        ; combout          ;
+; |ALU2GPU|FSM_reset                    ; |ALU2GPU|FSM_reset~corein             ; combout          ;
+; |ALU2GPU|data_in                      ; |ALU2GPU|data_in~corein               ; combout          ;
+; |ALU2GPU|B[5]                         ; |ALU2GPU|B[5]~corein                  ; combout          ;
+; |ALU2GPU|Reset_B                      ; |ALU2GPU|Reset_B~corein               ; combout          ;
+; |ALU2GPU|A[3]                         ; |ALU2GPU|A[3]~corein                  ; combout          ;
+; |ALU2GPU|Reset_A                      ; |ALU2GPU|Reset_A~corein               ; combout          ;
+; |ALU2GPU|B[3]                         ; |ALU2GPU|B[3]~corein                  ; combout          ;
+; |ALU2GPU|B[2]                         ; |ALU2GPU|B[2]~corein                  ; combout          ;
+; |ALU2GPU|B[1]                         ; |ALU2GPU|B[1]~corein                  ; combout          ;
+; |ALU2GPU|B[0]                         ; |ALU2GPU|B[0]~corein                  ; combout          ;
+; |ALU2GPU|A[2]                         ; |ALU2GPU|A[2]~corein                  ; combout          ;
+; |ALU2GPU|A[1]                         ; |ALU2GPU|A[1]~corein                  ; combout          ;
+; |ALU2GPU|A[0]                         ; |ALU2GPU|A[0]~corein                  ; combout          ;
+; |ALU2GPU|B[4]                         ; |ALU2GPU|B[4]~corein                  ; combout          ;
+; |ALU2GPU|A[7]                         ; |ALU2GPU|A[7]~corein                  ; combout          ;
+; |ALU2GPU|B[7]                         ; |ALU2GPU|B[7]~corein                  ; combout          ;
+; |ALU2GPU|B[6]                         ; |ALU2GPU|B[6]~corein                  ; combout          ;
+; |ALU2GPU|A[6]                         ; |ALU2GPU|A[6]~corein                  ; combout          ;
+; |ALU2GPU|A[5]                         ; |ALU2GPU|A[5]~corein                  ; combout          ;
+; |ALU2GPU|A[4]                         ; |ALU2GPU|A[4]~corein                  ; combout          ;
+; |ALU2GPU|FSM_reset~clk_delay_ctrl     ; |ALU2GPU|FSM_reset~clk_delay_ctrl     ; clkout           ;
+; |ALU2GPU|Reset_B~clk_delay_ctrl       ; |ALU2GPU|Reset_B~clk_delay_ctrl       ; clkout           ;
+; |ALU2GPU|FSM_reset~clkctrl            ; |ALU2GPU|FSM_reset~clkctrl            ; outclk           ;
+; |ALU2GPU|Reset_B~clkctrl              ; |ALU2GPU|Reset_B~clkctrl              ; outclk           ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |ALU2GPU|ALU2final:inst67|Add2~1      ; |ALU2GPU|ALU2final:inst67|Add2~1      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~2      ; |ALU2GPU|ALU2final:inst67|Add2~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~2      ; |ALU2GPU|ALU2final:inst67|Add2~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~4      ; |ALU2GPU|ALU2final:inst67|Add2~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~4      ; |ALU2GPU|ALU2final:inst67|Add2~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~6      ; |ALU2GPU|ALU2final:inst67|Add2~6      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~6      ; |ALU2GPU|ALU2final:inst67|Add2~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~0      ; |ALU2GPU|ALU2final:inst67|Add0~0      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~0      ; |ALU2GPU|ALU2final:inst67|Add0~1      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~2      ; |ALU2GPU|ALU2final:inst67|Add0~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~2      ; |ALU2GPU|ALU2final:inst67|Add0~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~4      ; |ALU2GPU|ALU2final:inst67|Add0~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~4      ; |ALU2GPU|ALU2final:inst67|Add0~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~6      ; |ALU2GPU|ALU2final:inst67|Add0~6      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~6      ; |ALU2GPU|ALU2final:inst67|Add0~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add1~0      ; |ALU2GPU|ALU2final:inst67|Add1~1      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add1~4      ; |ALU2GPU|ALU2final:inst67|Add1~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~4      ; |ALU2GPU|ALU2final:inst67|Add1~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~2      ; |ALU2GPU|ALU2final:inst67|Add4~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add4~2      ; |ALU2GPU|ALU2final:inst67|Add4~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~4      ; |ALU2GPU|ALU2final:inst67|Add4~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add4~6      ; |ALU2GPU|ALU2final:inst67|Add4~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~0      ; |ALU2GPU|ALU2final:inst67|Add3~1      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~2      ; |ALU2GPU|ALU2final:inst67|Add3~2      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~2      ; |ALU2GPU|ALU2final:inst67|Add3~3      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~8      ; |ALU2GPU|ALU2final:inst67|Add2~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~8      ; |ALU2GPU|ALU2final:inst67|Add2~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~10     ; |ALU2GPU|ALU2final:inst67|Add2~10     ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add2~10     ; |ALU2GPU|ALU2final:inst67|Add2~11     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add2~14     ; |ALU2GPU|ALU2final:inst67|Add2~14     ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~8      ; |ALU2GPU|ALU2final:inst67|Add0~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~8      ; |ALU2GPU|ALU2final:inst67|Add0~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~10     ; |ALU2GPU|ALU2final:inst67|Add0~10     ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~10     ; |ALU2GPU|ALU2final:inst67|Add0~11     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~12     ; |ALU2GPU|ALU2final:inst67|Add0~12     ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add0~12     ; |ALU2GPU|ALU2final:inst67|Add0~13     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add0~14     ; |ALU2GPU|ALU2final:inst67|Add0~14     ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add1~8      ; |ALU2GPU|ALU2final:inst67|Add1~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add1~12     ; |ALU2GPU|ALU2final:inst67|Add1~13     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~8      ; |ALU2GPU|ALU2final:inst67|Add4~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add4~10     ; |ALU2GPU|ALU2final:inst67|Add4~10     ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add4~10     ; |ALU2GPU|ALU2final:inst67|Add4~11     ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add4~12     ; |ALU2GPU|ALU2final:inst67|Add4~12     ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~4      ; |ALU2GPU|ALU2final:inst67|Add3~4      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~4      ; |ALU2GPU|ALU2final:inst67|Add3~5      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~6      ; |ALU2GPU|ALU2final:inst67|Add3~6      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~6      ; |ALU2GPU|ALU2final:inst67|Add3~7      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~8      ; |ALU2GPU|ALU2final:inst67|Add3~8      ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Add3~8      ; |ALU2GPU|ALU2final:inst67|Add3~9      ; cout             ;
+; |ALU2GPU|ALU2final:inst67|Add3~10     ; |ALU2GPU|ALU2final:inst67|Add3~10     ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[5]            ; |ALU2GPU|latch2:inst3|Q[5]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[3]            ; |ALU2GPU|latch1:inst2|Q[3]            ; regout           ;
+; |ALU2GPU|latch2:inst3|Q[3]            ; |ALU2GPU|latch2:inst3|Q[3]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~1    ; |ALU2GPU|ALU2final:inst67|Result~1    ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[2]            ; |ALU2GPU|latch2:inst3|Q[2]            ; regout           ;
+; |ALU2GPU|latch2:inst3|Q[1]            ; |ALU2GPU|latch2:inst3|Q[1]            ; regout           ;
+; |ALU2GPU|latch2:inst3|Q[0]            ; |ALU2GPU|latch2:inst3|Q[0]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[2]            ; |ALU2GPU|latch1:inst2|Q[2]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[1]            ; |ALU2GPU|latch1:inst2|Q[1]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[0]            ; |ALU2GPU|latch1:inst2|Q[0]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~5    ; |ALU2GPU|ALU2final:inst67|Result~5    ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[4]            ; |ALU2GPU|latch2:inst3|Q[4]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Selector6~1 ; |ALU2GPU|ALU2final:inst67|Selector6~1 ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Selector7~0 ; |ALU2GPU|ALU2final:inst67|Selector7~0 ; combout          ;
+; |ALU2GPU|latch1:inst2|Q[7]            ; |ALU2GPU|latch1:inst2|Q[7]            ; regout           ;
+; |ALU2GPU|latch2:inst3|Q[7]            ; |ALU2GPU|latch2:inst3|Q[7]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~8    ; |ALU2GPU|ALU2final:inst67|Result~8    ; combout          ;
+; |ALU2GPU|latch2:inst3|Q[6]            ; |ALU2GPU|latch2:inst3|Q[6]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[6]            ; |ALU2GPU|latch1:inst2|Q[6]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[5]            ; |ALU2GPU|latch1:inst2|Q[5]            ; regout           ;
+; |ALU2GPU|latch1:inst2|Q[4]            ; |ALU2GPU|latch1:inst2|Q[4]            ; regout           ;
+; |ALU2GPU|ALU2final:inst67|Result~9    ; |ALU2GPU|ALU2final:inst67|Result~9    ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result~10   ; |ALU2GPU|ALU2final:inst67|Result~10   ; combout          ;
+; |ALU2GPU|ALU2final:inst67|Result~11   ; |ALU2GPU|ALU2final:inst67|Result~11   ; combout          ;
+; |ALU2GPU|OP[6]                        ; |ALU2GPU|OP[6]                        ; padio            ;
+; |ALU2GPU|OP[5]                        ; |ALU2GPU|OP[5]                        ; padio            ;
+; |ALU2GPU|OP[4]                        ; |ALU2GPU|OP[4]                        ; padio            ;
+; |ALU2GPU|OP[3]                        ; |ALU2GPU|OP[3]                        ; padio            ;
+; |ALU2GPU|OP[2]                        ; |ALU2GPU|OP[2]                        ; padio            ;
+; |ALU2GPU|OP[1]                        ; |ALU2GPU|OP[1]                        ; padio            ;
+; |ALU2GPU|OP[0]                        ; |ALU2GPU|OP[0]                        ; padio            ;
+; |ALU2GPU|Sign[0]                      ; |ALU2GPU|Sign[0]                      ; padio            ;
+; |ALU2GPU|Sign[1]                      ; |ALU2GPU|Sign[1]                      ; padio            ;
+; |ALU2GPU|Sign[2]                      ; |ALU2GPU|Sign[2]                      ; padio            ;
+; |ALU2GPU|Sign[3]                      ; |ALU2GPU|Sign[3]                      ; padio            ;
+; |ALU2GPU|Sign[4]                      ; |ALU2GPU|Sign[4]                      ; padio            ;
+; |ALU2GPU|Sign[5]                      ; |ALU2GPU|Sign[5]                      ; padio            ;
+; |ALU2GPU|Sign[6]                      ; |ALU2GPU|Sign[6]                      ; padio            ;
+; |ALU2GPU|student_ID[0]                ; |ALU2GPU|student_ID[0]                ; padio            ;
+; |ALU2GPU|Enable_Decoder               ; |ALU2GPU|Enable_Decoder~corein        ; combout          ;
+; |ALU2GPU|FSM_reset                    ; |ALU2GPU|FSM_reset~corein             ; combout          ;
+; |ALU2GPU|data_in                      ; |ALU2GPU|data_in~corein               ; combout          ;
+; |ALU2GPU|B[5]                         ; |ALU2GPU|B[5]~corein                  ; combout          ;
+; |ALU2GPU|Reset_B                      ; |ALU2GPU|Reset_B~corein               ; combout          ;
+; |ALU2GPU|A[3]                         ; |ALU2GPU|A[3]~corein                  ; combout          ;
+; |ALU2GPU|Reset_A                      ; |ALU2GPU|Reset_A~corein               ; combout          ;
+; |ALU2GPU|B[3]                         ; |ALU2GPU|B[3]~corein                  ; combout          ;
+; |ALU2GPU|B[2]                         ; |ALU2GPU|B[2]~corein                  ; combout          ;
+; |ALU2GPU|B[1]                         ; |ALU2GPU|B[1]~corein                  ; combout          ;
+; |ALU2GPU|B[0]                         ; |ALU2GPU|B[0]~corein                  ; combout          ;
+; |ALU2GPU|A[2]                         ; |ALU2GPU|A[2]~corein                  ; combout          ;
+; |ALU2GPU|A[1]                         ; |ALU2GPU|A[1]~corein                  ; combout          ;
+; |ALU2GPU|A[0]                         ; |ALU2GPU|A[0]~corein                  ; combout          ;
+; |ALU2GPU|B[4]                         ; |ALU2GPU|B[4]~corein                  ; combout          ;
+; |ALU2GPU|A[7]                         ; |ALU2GPU|A[7]~corein                  ; combout          ;
+; |ALU2GPU|B[7]                         ; |ALU2GPU|B[7]~corein                  ; combout          ;
+; |ALU2GPU|B[6]                         ; |ALU2GPU|B[6]~corein                  ; combout          ;
+; |ALU2GPU|A[6]                         ; |ALU2GPU|A[6]~corein                  ; combout          ;
+; |ALU2GPU|A[5]                         ; |ALU2GPU|A[5]~corein                  ; combout          ;
+; |ALU2GPU|A[4]                         ; |ALU2GPU|A[4]~corein                  ; combout          ;
+; |ALU2GPU|FSM_reset~clk_delay_ctrl     ; |ALU2GPU|FSM_reset~clk_delay_ctrl     ; clkout           ;
+; |ALU2GPU|Reset_B~clk_delay_ctrl       ; |ALU2GPU|Reset_B~clk_delay_ctrl       ; clkout           ;
+; |ALU2GPU|FSM_reset~clkctrl            ; |ALU2GPU|FSM_reset~clkctrl            ; outclk           ;
+; |ALU2GPU|Reset_B~clkctrl              ; |ALU2GPU|Reset_B~clkctrl              ; outclk           ;
++---------------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Tue Nov 27 17:04:40 2018
+Info: Command: quartus_sim --simulation_results_format=VWF Lab6 -c Lab6
+Info (324025): Using vector source file "/home/student1/npbhavsa/lab6new1/ALU2Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      53.14 %
+Info (328052): Number of transitions in simulation is 4356
+Info (324045): Vector file Lab6.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 296 megabytes
+    Info: Processing ended: Tue Nov 27 17:04:41 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

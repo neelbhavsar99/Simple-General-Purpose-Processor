@@ -1,0 +1,20 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+
+ENTITY MOD_Segment IS
+PORT ( bcd: IN STD_LOGIC ;
+        leds : out STD_LOGIC_VECTOR(1 TO 7) ) ;
+        
+END MOD_Segment ;
+
+ARCHITECTURE Behavior OF MOD_Segment IS
+BEGIN
+PROCESS (bcd)
+BEGIN
+CASE bcd IS --            abcdefg
+WHEN '0' => leds <= not ("0100101") ;
+WHEN '1' => leds <= not ("0101111") ;
+end case;
+
+END PROCESS ;
+END Behavior ;
